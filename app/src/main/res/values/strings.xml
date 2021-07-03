@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DC Dev Test</string>
+
+    <!--  Search  -->
+    <string name="city_search_hint">Digite o nome da cidade</string>
+    <string name="city_search_start_hint">Para ver a previsão de amanhã, pesquise uma cidade</string>
+    <string name="city_search_failed">Houve um problema ao carregar a previsão de amanhã</string>
+    <string name="city_search_success">A previsão de amanhã para %1$s está disponível</string>
+    <string name="city_search_retry">Tentar de novo</string>
+    <string name="city_search_view_details">Ver previsão</string>
+
+    <!--  Details  -->
+    <string name="details_hour">%1$dh</string>
+    <string name="details_date">Previsão de %1$s</string>
+    <string name="details_temperature">%1$.0f°</string>
+    <string name="details_apparent_temperature">Sensação de %1$.0f°</string>
+    <string name="details_rain_percentage">%1$.0f%%</string>
+    <string name="weatherbit_attribution">Fonte: Weatherbit.io</string>
+</resources>

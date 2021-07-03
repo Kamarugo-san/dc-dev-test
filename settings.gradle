@@ -1,0 +1,2 @@
+rootProject.name = "DC Dev Test"
+include ':app'

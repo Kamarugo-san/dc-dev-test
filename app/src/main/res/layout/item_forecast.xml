@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="160dp"
+    android:layout_height="190dp"
+    android:background="@android:color/white">
+
+    <View
+        android:id="@+id/time_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/item_forecast_gradient_night"
+        app:layout_constraintBottom_toBottomOf="@id/weather_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hour_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="12h" />
+
+    <ImageView
+        android:id="@+id/weather_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toStartOf="@id/temperature_text_view"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hour_text_view"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/temperature_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/color_text"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@id/weather_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/weather_icon"
+        app:layout_constraintTop_toTopOf="@id/weather_icon"
+        tools:text="26°" />
+
+    <ImageView
+        android:id="@+id/rain_percentage_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:rotation="180"
+        android:src="@drawable/ic_drop"
+        app:layout_constraintEnd_toStartOf="@id/rain_percentage_text_view"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weather_icon" />
+
+    <TextView
+        android:id="@+id/rain_percentage_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/rain_drop"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/rain_percentage_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/rain_percentage_icon"
+        app:layout_constraintTop_toTopOf="@id/rain_percentage_icon"
+        tools:text="56%" />
+
+    <TextView
+        android:id="@+id/apparent_temperature_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/color_text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Sensação de 24°" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

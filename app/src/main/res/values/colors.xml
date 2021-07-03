@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3D5AFE</color>
+    <color name="colorPrimaryVariant">#1F3AD3</color>
+    <color name="colorSecondary">#E33838</color>
+    <color name="colorSecondaryVariant">#C50D0D</color>
+    <color name="rain_drop">#2196F3</color>
+    <color name="item_forecast_night_color">#1A237E</color>
+    <color name="item_forecast_day_color">#07A8FF</color>
+</resources>
